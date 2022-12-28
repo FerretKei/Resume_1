@@ -1,87 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;900&display=swap");
 
-body {
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-style: oblique;
-    background-color: #ddd;
-    text-align: center;
-
-}
-
-.card-title {
-
-    background-color: #99acc2;
-    border: 4px solid black;
-    border-radius: 25px;
-    margin: 10px;
-    margin-left: 450px;
-    margin-right: 450px;
-}
-
-.card-hobby {
-    background-color: #bc86b3;
-    border: 4px solid black;
-    border-radius: 25px;
-    margin: 10px;
-    margin-left: 450px;
-    margin-right: 450px;
-}
-
-.card-exp {
-
-    background-color: #cab9a3;
-    border: 4px solid black;
-    border-radius: 25px;
-    /* margin-bottom:auto; */
+@media (max-width: 650px) {
+  .container {
+    font-size: 1.5rem;
     padding: 10px;
-}
-
-.card-exp thead {
-    font-family: 'Roboto' sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.card-exp tbody {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-
-}
-
-.card-course {
-    background-color: #d8d8bb;
-    border: 4px solid black;
-    border-radius: 25px;
-    margin: 10px;
-    text-align: left;
-    font-weight: bold;
-    margin-left: 450px;
-    margin-right: 450px;
-
-
-
-}
-
-.card-course h2 {
     text-align: center;
-    
-}
-.card-list{
-    vertical-align: baseline;
-}
-.card-contact {
-    background-color: #d8d8bb;
-    border: 4px solid black;
-    border-radius: 25px;
-    margin-left: 450px;
-    margin-right: 450px;
-    
+  }
 }
 
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-style: oblique;
+  background-color: #ddd;
+  text-align: center;
+}
 
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
 
-/*.color5 {color: #cbe0e0;} */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 14px black;
+}
+
+.info {
+  margin-bottom: 20px;
+
+  background: #5adcf3;
+  border-radius: 20px;
+}
+
+.info p {
+  padding: 10px;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #082f50;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+a {
+  color: rgb(4, 68, 68);
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
+
+.btn {
+  background: #082f50;
+  padding: 20px 25px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.bg-1 {
+  background-color: #4682b4;
+}
+
+.bg-2 {
+  background-color: #b0c4de;
+}
+
+.bg-3 {
+  background-color: #b0e0e6;
+}
+
+.bg-4 {
+  background-color: #add8e6;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  color: rgb(4, 4, 7);
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(24, 22, 22);
+  padding-bottom: 5px;
+  display: inline;
+  text-decoration: none;
+}
+
+.table {
+  width: 100%;
+}
+.table ul li {
+  list-style: none;
+}
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(odd) {
+  color: blueviolet;
+}
+.table td:nth-child(2),
+.table td:nth-child(4) {
+  color: #082f50;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+.form-row,
+.form-group {
+  /* display: inline-block; */
+  margin-right: 20px;
+  width: 50%;
+  /* width: calc(50%-20px); */
+}
+
+.form-row,
+.form-group:last-child {
+  margin-right: 0;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1ps solid #ccc;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
